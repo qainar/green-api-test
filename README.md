@@ -10,13 +10,17 @@ docker-compose up -d
 cd gateway
 
 
-npm i && npm start
+npm i 
+
+npm run start
 
 
 cd m1
 
 
-npm i && npm start
+npm i
+
+npm run start
 
 
 запрос отправить на http://localhost:3000/calculate 
