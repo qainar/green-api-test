@@ -1,0 +1,14 @@
+version: "2.1"
+services:
+  rabbitmq:
+    image: rabbitmq:3.10.7-management
+    hostname: rabbitmq
+    restart: always
+    environment:
+      - RABBITMQ_DEFAULT_USER=qainar
+      - RABBITMQ_DEFAULT_PASS=qainar
+    ports:
+      - 15672:15672
+      - 5672:5672
+    volumes:
+      - ./rabbitmq:/var/lib/rabbitmq
